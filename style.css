@@ -1,0 +1,249 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbar nav a {
+    color: #fff;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* ================= HERO ================= */
+.hero {
+    height: 100vh;
+    background: url("images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.small-title {
+    color: #d8d8d8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.primary {
+    background-color: #b24a2b;
+    color: #fff;
+}
+
+.secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* ================= TOP PRODUCTS ================= */
+.products {
+    padding: 80px;
+    text-align: center;
+}
+
+.products h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #111;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.product-card span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.product-card button {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #b24a2b;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ================= OFFER ================= */
+.offer {
+    background: url("images/offer.jpg") center/cover no-repeat;
+    padding: 300px 80px;
+}
+
+.offer-content {
+    max-width: 400px;
+}
+
+.offer h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #b24a2b;
+    margin-bottom: 15px;
+}
+
+.offer p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* ================= EXPLORE ================= */
+.explore {
+    padding: 80px;
+    text-align: center;
+}
+
+.explore h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.explore-menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.explore-menu span {
+    cursor: pointer;
+    font-size: 14px;
+    color: #777;
+}
+
+.explore-menu .active {
+    color: #b24a2b;
+    border-bottom: 2px solid #b24a2b;
+    padding-bottom: 5px;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.explore-grid img {
+    width: 100%;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero {
+        padding-left: 30px;
+    }
+
+    .product-grid,
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .products,
+    .explore,
+    .offer {
+        padding: 50px 30px;
+    }
+}
+
+/* ================= PRODUCTS PAGE ================= */
+
+.page-products {
+    padding: 160px 80px 80px; /* top padding fixes navbar overlap */
+    background-color: #f9f9f9;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.category-title {
+    font-size: 22px;
+    margin: 40px 0 20px;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delicious Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">KEITSTON</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="small-title">Delicious Cafe</p>
+        <h1>Sweet Treats,<br>Perfect Eats</h1>
+        <div class="hero-buttons">
+            <button class="btn primary">Shop Now</button>
+            <button class="btn secondary">Learn More</button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TOP PRODUCTS ================= -->
+<section class="products">
+    <h2>Top Products</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images/p1.jpg">
+            <p>$40</p>
+            <span>Whole Grain Bread</span>
+            <button data-name="Whole Grain Bread" data-price="40" data-image="images/p1.jpg">
+                Add
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/p3.jpg">
+            <p>$40</p>
+            <span>Classic Bread</span>
+            <button data-name="Classic Bread" data-price="40" data-image="images/p3.jpg">
+                Add
+            </button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/e2.jpg">
+            <p>$50</p>
+            <span>Chocolate Cake</span>
+            <button data-name="Chocolate Cake" data-price="50" data-image="images/e2.jpg">
+                Add
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= OFFER ================= -->
+<section class="offer">
+    <div class="offer-content">
+        <h3>20% Off Your<br>First Order</h3>
+        <p>
+            Freshly baked goods made with<br>
+            love and premium ingredients.
+        </p>
+        <button class="btn primary">Learn More</button>
+    </div>
+</section>
+
+<!-- ================= EXPLORE MORE ================= -->
+<section class="explore">
+    <h2>Explore More</h2>
+
+    <div class="explore-menu">
+        <span class="active">Cake</span>
+        <span>Muffins</span>
+        <span>Bread</span>
+        <span>Tart</span>
+    </div>
+
+    <div class="explore-grid">
+        <img src="images/e1.jpg">
+        <img src="images/e2.jpg">
+        <img src="images/e3.jpg">
+        <img src="images/e1.jpg">
+        <img src="images/e2.jpg">
+        <img src="images/e3.jpg">
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2026 Delicious Cafe. All Rights Reserved.</p>
+</footer>
+
+<!-- ================= CART SCRIPT ================= -->
+<script src="cart.js"></script>
+
+</body>
+</html>
